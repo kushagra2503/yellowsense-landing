@@ -32,3 +32,4 @@ If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.
 [00:25:14.151] Server  LOG      ✓ Compiled in 54ms
 [00:25:32.523] Server  LOG      ✓ Compiled in 39ms
 [01:09:16.497] Server  LOG      ✓ Compiled in 99ms
+[10:03:57.599] Server  LOG      ✓ Compiled in 130ms

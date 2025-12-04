@@ -16,11 +16,6 @@ export function HeroSection() {
     <section className="pt-32 pb-20 lg:pt-40 lg:pb-32">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 mb-6">
-            <Zap className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-foreground">Innovating the Future</span>
-          </div>
-
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6 text-balance">
             Where Deep Tech Meets <span className="text-primary">Human Innovation</span>
           </h1>
