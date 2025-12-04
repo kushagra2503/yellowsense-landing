@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Linkedin, Twitter, Github, Instagram } from "lucide-react"
+import { FloatingDock } from "@/components/ui/floating-dock"
 
 export function Footer() {
   const footerLinks = {
@@ -27,10 +28,10 @@ export function Footer() {
   }
 
   const socialLinks = [
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Instagram, href: "#", label: "Instagram" },
+    { title: "LinkedIn", icon: <Linkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />, href: "#" },
+    { title: "Twitter", icon: <Twitter className="h-full w-full text-neutral-500 dark:text-neutral-300" />, href: "#" },
+    { title: "GitHub", icon: <Github className="h-full w-full text-neutral-500 dark:text-neutral-300" />, href: "#" },
+    { title: "Instagram", icon: <Instagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />, href: "#" },
   ]
 
   return (
@@ -52,17 +53,8 @@ export function Footer() {
             <p className="text-footer-foreground/70 leading-relaxed mb-6">
               Empowering businesses with innovative technology solutions that drive growth and digital transformation.
             </p>
-            <div className="flex gap-4">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  aria-label={social.label}
-                  className="w-10 h-10 bg-footer-foreground/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
-                >
-                  <social.icon className="w-5 h-5" />
-                </a>
-              ))}
+            <div className="flex justify-start">
+              <FloatingDock items={socialLinks} />
             </div>
           </div>
 

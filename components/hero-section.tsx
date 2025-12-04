@@ -42,7 +42,7 @@ export function HeroSection() {
         </div>
 
         {/* Hero Image */}
-        <div className="mt-16 lg:mt-20 relative w-full overflow-hidden">
+        <div className="mt-8 lg:mt-12 relative w-full overflow-hidden -mb-32 lg:-mb-40">
           <MacbookScroll
             src="/modern-technology-office-workspace-with-yellow-acc.jpg"
             showGradient={true}
@@ -52,7 +52,7 @@ export function HeroSection() {
               </span>
             }
           />
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-card border border-border rounded-xl px-6 py-4 shadow-lg z-20">
+          <div className="absolute bottom-40 left-1/2 -translate-x-1/2 bg-card border border-border rounded-xl px-6 py-4 shadow-lg z-20">
             <div className="flex items-center gap-6">
               <div className="text-center">
                 <div className="text-2xl font-bold text-foreground">500+</div>
