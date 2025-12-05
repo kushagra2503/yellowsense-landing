@@ -2,112 +2,135 @@
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Users, Shield, BarChart3, Cloud, Lock, Music, Network } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 
 export function ProductsSection() {
-  const products = [
+  const categories = [
     {
-      category: "Household Services",
-      title: "Nanny/Maid",
+      category: "For Businesses",
+      title: "Enterprise Solutions",
+      src: "/modern-technology-office-workspace-with-yellow-acc.jpg",
+      content: <CategoryContent
+        title="Enterprise Solutions"
+        description="Empowering industry leaders with cutting-edge technology. From secure data environments to blockchain e-commerce and AI media solutions."
+        products={[
+          {
+            title: "Confidential Clean Rooms (CCR)",
+            desc: "Secure, compliant data governance & predictive analytics for lending.",
+            url: "https://ccr.yellowsense.in/",
+            features: ["Data Privacy", "Compliance", "AI/ML"]
+          },
+          {
+            title: "Melody",
+            desc: "AI-powered content creation & media processing solutions.",
+            url: "https://melody.yellowsense.in",
+            features: ["Generative AI", "Media Processing", "Digital"]
+          },
+          {
+            title: "NetworkX",
+            desc: "Blockchain-based decentralized e-commerce & personalization.",
+            url: "https://networkx.yellowsense.in",
+            features: ["Blockchain", "DeFi", "Personalization"]
+          },
+          {
+            title: "Cybersecurity",
+            desc: "Proactive threat detection and security audits.",
+            url: "https://yellowsense.in",
+            features: ["Threat Detection", "Audits"]
+          },
+          {
+            title: "Data & Analytics",
+            desc: "Unlock business potential with advanced analytics.",
+            url: "https://yellowsense.in",
+            features: ["BI", "Predictive Analytics"]
+          },
+          {
+            title: "Cloud Infrastructure",
+            desc: "Scalable, secure, and cost-efficient cloud solutions.",
+            url: "https://yellowsense.in",
+            features: ["Migration", "DevOps"]
+          }
+        ]}
+      />,
+    },
+    {
+      category: "For Home",
+      title: "Household Services",
       src: "/assets/nanny.png",
-      content: <DummyContent title="anny" description="Connect with trusted and verified maids and nannies for your household needs. Our platform ensures safe, reliable, and professional home help services with instant booking and flexible scheduling." features={["Instant Booking", "Verified Professionals", "Flexible Scheduling"]} url="https://yellowsense.in" />,
-    },
-    {
-      category: "Data Governance",
-      title: "Confidential Clean Rooms (CCR)",
-      src: "/assets/ccr.png",
-      content: <DummyContent title="Confidential Clean Rooms (CCR)" description="Empowering the next billion users through innovative data governance and predictive analytics solutions using AI/ML based Confidential Clean Rooms for secure, compliant lending." features={["Automated Compliance Solutions", "Flow-Based Lending", "Inclusive Credit Ecosystem"]} url="https://ccr.yellowsense.in/" />,
-    },
-    {
-      category: "AI & Media",
-      title: "Melody",
-      src: "/modern-technology-office-workspace-with-yellow-acc.jpg",
-      content: <DummyContent title="Melody" description="Advanced AI-powered solutions for content creation, media processing, and digital experiences. Revolutionizing how businesses and creators work with multimedia content." features={["AI Content Creation", "Media Processing", "Digital Innovation"]} url="https://melody.yellowsense.in" />,
-    },
-    {
-      category: "Blockchain",
-      title: "NetworkX",
-      src: "/modern-technology-office-workspace-with-yellow-acc.jpg",
-      content: <DummyContent title="NetworkX" description="Blockchain-based decentralized e-commerce platform with AI personalization engine. Delivering personalized recommendations and exclusive offers through Hyperledger Fabric chain-code technology." features={["AI Personalization Engine", "Blockchain Security", "Decentralized E-commerce"]} url="https://networkx.yellowsense.in" />,
-    },
-    {
-      category: "Security",
-      title: "Cybersecurity Solutions",
-      src: "/modern-technology-office-workspace-with-yellow-acc.jpg",
-      content: <DummyContent title="Cybersecurity Solutions" description="We keep your business safe by actively identifying and neutralizing cyber threats through a proactive risk and threat-centric approach." features={["Threat Detection", "Security Audits", "Compliance Management"]} url="https://yellowsense.in" />,
-    },
-    {
-      category: "Data & Analytics",
-      title: "Data & Analytics",
-      src: "/modern-technology-office-workspace-with-yellow-acc.jpg",
-      content: <DummyContent title="Data & Analytics" description="We help you unlock the immense potential of data, AI and analytics, ensuring that your organisation is fit for the digital future." features={["Business Intelligence", "Predictive Analytics", "Data Visualization"]} url="https://yellowsense.in" />,
-    },
-    {
-      category: "Cloud",
-      title: "Cloud Infrastructure",
-      src: "/modern-technology-office-workspace-with-yellow-acc.jpg",
-      content: <DummyContent title="Cloud Infrastructure" description="Transform your IT infrastructure with our cloud solutions that offer scalability, security, and cost-efficiency for modern enterprises." features={["Cloud Migration", "DevOps Solutions", "Infrastructure Management"]} url="https://yellowsense.in" />,
+      content: <CategoryContent
+        title="Household Services"
+        description="Trusted help for your home. Connect with verified professionals for your daily needs with complete peace of mind."
+        products={[
+          {
+            title: "Nanny & Maid Booking",
+            desc: "Connect with trusted, verified maids and nannies. Instant booking and flexible scheduling for your household needs.",
+            url: "https://yellowsense.in",
+            features: ["Instant Booking", "Verified Staff", "Secure"]
+          }
+        ]}
+      />,
     },
   ];
 
-  const cards = products.map((card, index) => (
+  const cards = categories.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
 
   return (
-    <section id="products" className="py-20 lg:py-32 w-full h-full">
+    <section id="products" className="py-20 lg:py-32 w-full h-full bg-neutral-50 dark:bg-neutral-950">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center mb-4">
-          <span className="text-sm font-semibold text-primary uppercase tracking-wider">What We Do</span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6 text-balance">
-            Our Products & Services
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <span className="text-sm font-semibold text-primary uppercase tracking-wider">Our Offerings</span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6 text-balance animate-fade-in-up">
+            Choose Your Category
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Discover our comprehensive suite of technology solutions designed to transform your business operations.
+          <p className="text-lg text-muted-foreground leading-relaxed animate-fade-in-up delay-100">
+            Whether you are an enterprise looking for tech solutions or a family seeking household help, we have you covered.
           </p>
         </div>
       </div>
-      <Carousel items={cards} />
+      <div className="animate-fade-in-up delay-200">
+        <Carousel items={cards} />
+      </div>
     </section>
   );
 }
 
-const DummyContent = ({ title, description, features, url }: { title: string, description: string, features: string[], url: string }) => {
+const CategoryContent = ({ title, description, products }: { title: string, description: string, products: any[] }) => {
   return (
-    <>
-      {[...new Array(1)].map((_, index) => (
-        <div
-          key={"dummy-content" + index}
-          className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
-        >
-          <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-            <span className="font-bold text-neutral-700 dark:text-neutral-200">
-              {title}
-            </span>{" "}
-            {description}
-          </p>
-          <div className="mt-8 flex flex-wrap gap-4 justify-center">
-             {features.map((feature, idx) => (
-                <span key={idx} className="bg-white dark:bg-neutral-700 text-neutral-700 dark:text-white px-4 py-2 rounded-full text-sm font-medium shadow-sm">
+    <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-6 md:p-10 rounded-3xl mb-4">
+      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-xl font-sans max-w-3xl mx-auto mb-10">
+        <span className="font-bold text-neutral-700 dark:text-neutral-200">
+          {title}
+        </span>{" "}
+        {description}
+      </p>
+      
+      <div className="grid md:grid-cols-2 gap-6">
+        {products.map((product, index) => (
+          <div key={index} className="bg-white dark:bg-neutral-900 p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+            <h3 className="text-xl font-bold text-neutral-800 dark:text-white mb-2">{product.title}</h3>
+            <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-4 leading-relaxed">
+              {product.desc}
+            </p>
+            <div className="flex flex-wrap gap-2 mb-6">
+              {product.features.map((feature: string, idx: number) => (
+                <span key={idx} className="bg-neutral-100 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 px-2 py-1 rounded-md text-xs font-medium">
                   {feature}
                 </span>
-             ))}
-          </div>
-          <div className="mt-8 flex justify-center">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 gap-2" onClick={() => window.open(url, '_blank')}>
-              Visit Website
-              <ArrowRight className="w-4 h-4" />
+              ))}
+            </div>
+            <Button 
+              size="sm" 
+              className="w-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-colors group"
+              onClick={() => window.open(product.url, '_blank')}
+            >
+              Learn More
+              <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
-          <div className="mt-8 relative h-60 w-full rounded-xl overflow-hidden shadow-lg">
-             <img
-              src="/modern-technology-office-workspace-with-yellow-acc.jpg"
-              alt="Product preview"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          </div>
-        </div>
-      ))}
-    </>
+        ))}
+      </div>
+    </div>
   );
 };

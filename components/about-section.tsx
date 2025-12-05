@@ -6,33 +6,32 @@ export function AboutSection() {
       icon: Target,
       title: "Our Mission",
       description:
-        "To empower businesses with innovative technology solutions that drive growth and efficiency in an ever-evolving digital landscape.",
+        "To simplify complex challenges through intuitive technology that empowers organizations and enriches everyday life.",
     },
     {
       icon: Lightbulb,
-      title: "Our Vision",
+      title: "Our Approach",
       description:
-        "To be the leading technology partner for enterprises seeking transformative digital solutions that create lasting impact.",
+        "We blend deep technical expertise with human-centered design to help businesses operate smarter and families care better.",
     },
     {
       icon: Users,
-      title: "Our Team",
+      title: "Our Solutions",
       description:
-        "A diverse collective of engineers, designers, and strategists united by our passion for technology and commitment to excellence.",
+        "Delivering intelligent solutions across enterprise technology, AI, and modern nanny-care services with forward-focused innovation.",
     },
   ]
 
   return (
     <section id="about" className="py-20 lg:py-32 bg-secondary/50">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center mb-16">
+        <div className="max-w-4xl mx-auto text-center mb-16">
           <span className="text-sm font-semibold text-primary uppercase tracking-wider">About Us</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6 text-balance">
-            Our Collection of Tech Services
+            Forward-Focused Innovation
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Our services span various needs at every stage of the transformation process. Explore how we help businesses
-            transform and thrive.
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+            Yellowsense Technologies is a forward-focused innovation company delivering intelligent solutions across enterprise technology, AI, and modern nanny-care services. We blend deep technical expertise with human-centered design to help businesses operate smarter and families care better. Our mission is to simplify complex challenges through intuitive technology that empowers organizations and enriches everyday life.
           </p>
         </div>
 
