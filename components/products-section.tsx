@@ -66,6 +66,12 @@ export function ProductsSection() {
             desc: "Connect with trusted, verified maids and nannies. Instant booking and flexible scheduling for your household needs.",
             url: "https://yellowsense.in",
             features: ["Instant Booking", "Verified Staff", "Secure"]
+          },
+          {
+            title: "Menstrual Hygiene Platform",
+            desc: "Empowering women through sustainable menstrual health. A marketplace where women can sell and buy reusable pads, creating income opportunities and promoting eco-friendly menstrual care.",
+            url: "https://yellowsense.in",
+            features: ["Reusable Products", "Women's Empowerment", "Sustainable Care"]
           }
         ]}
       />,
