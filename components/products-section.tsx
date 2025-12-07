@@ -59,7 +59,7 @@ export function ProductsSection() {
       src: "/assets/nanny.png",
       content: <CategoryContent
         title="Household Services"
-        description="Trusted help for your home. Connect with verified professionals for your daily needs with complete peace of mind."
+        description="Transform your daily life with our comprehensive household solutions. From childcare and home cleaning to women's wellness products, we connect you with verified professionals and sustainable marketplaces that prioritize safety, quality, and peace of mind."
         products={[
           {
             title: "Nanny & Maid Booking",
@@ -68,10 +68,10 @@ export function ProductsSection() {
             features: ["Instant Booking", "Verified Staff", "Secure"]
           },
           {
-            title: "Menstrual Hygiene Platform",
-            desc: "Empowering women through sustainable menstrual health. A marketplace where women can sell and buy reusable pads, creating income opportunities and promoting eco-friendly menstrual care.",
+            title: "EmpowerHer Platform",
+            desc: "Empowering women through sustainable menstrual health. A marketplace where women can sell and buy reusable products, creating income opportunities and promoting eco-friendly wellness solutions.",
             url: "https://yellowsense.in",
-            features: ["Reusable Products", "Women's Empowerment", "Sustainable Care"]
+            features: ["Economic Empowerment", "Sustainable Products", "Women's Wellness"]
           }
         ]}
       />,
