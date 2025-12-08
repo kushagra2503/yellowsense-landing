@@ -53,17 +53,17 @@ export function AboutSection() {
               </span>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
                 Pioneering the Future of
-                <span className="gradient-text"> Digital Trust</span>
+                <span className="text-yellow-400"> Industrial Security</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                We are a team of AI researchers, engineers, and security experts dedicated to 
-                combating digital fraud and synthetic media threats. Our mission is to build 
-                trust in the digital age through advanced deep tech solutions.
+                Yellowsense Technologies is a forward-focused deep tech company delivering 
+                intelligent solutions for industrial security and efficiency. We combine advanced 
+                AI with robust cybersecurity to protect and optimize your operations.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Founded with a vision to protect organizations from emerging AI threats, 
-                we've developed state-of-the-art detection systems that safeguard millions 
-                of digital interactions daily.
+                Our mission is to solve complex industrial challenges through technology that 
+                prevents fraud and detects faults before they impact operations, helping 
+                businesses operate securely and efficiently.
               </p>
             </div>
 

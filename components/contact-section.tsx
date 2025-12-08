@@ -46,7 +46,7 @@ export function ContactSection() {
 
               <div className="space-y-6">
                 <a 
-                  href="mailto:hello@pi-labs.ai" 
+                  href="mailto:hr@yellowsense.in" 
                   className="flex items-center gap-4 text-white/80 hover:text-white transition-colors group"
                 >
                   <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
@@ -54,7 +54,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <div className="text-sm text-white/60">Email</div>
-                    <div className="font-medium">hello@pi-labs.ai</div>
+                    <div className="font-medium">hr@yellowsense.in</div>
                   </div>
                 </a>
 

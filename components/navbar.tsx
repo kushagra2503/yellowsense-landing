@@ -15,26 +15,17 @@ export function Navbar() {
     { href: "/", label: "Home" },
     { 
       href: "#products", 
-      label: "Our Product",
+      label: "Our Products",
       dropdown: [
-        { label: "pi-authentify", desc: "AI-driven deepfake detection", href: "#products" },
-        { label: "pi-vox", desc: "Multilingual speech intelligence", href: "#products" },
-        { label: "pi-scout", desc: "Big data fusion and analytics", href: "#products" },
-        { label: "pi-sense", desc: "Advanced sensing solutions", href: "#products" },
-        { label: "pi-securechain", desc: "Blockchain security", href: "#products" },
+        { label: "Fraud Detection AI", desc: "Real-time transaction monitoring", href: "#products" },
+        { label: "Industrial Fault Detection", desc: "AI-powered anomaly detection", href: "#products" },
+        { label: "Confidential Clean Rooms", desc: "Secure data environments", href: "#products" },
+        { label: "Predictive Maintenance", desc: "Prevent equipment failures", href: "#products" },
+        { label: "Threat Intelligence", desc: "Proactive cyber defense", href: "#products" },
       ]
     },
-    { 
-      href: "#", 
-      label: "Resources",
-      dropdown: [
-        { label: "Research", href: "#" },
-        { label: "Newsroom", href: "#blog" },
-        { label: "FAQ", href: "#" },
-      ]
-    },
-    { href: "#blog", label: "Blog" },
-    { href: "#about", label: "Company" },
+    { href: "#about", label: "About Us" },
+    { href: "#contact", label: "Contact" },
   ]
 
   return (
@@ -51,38 +42,18 @@ export function Navbar() {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="relative"
             >
-              {/* Pi Symbol */}
-              <svg 
-                viewBox="0 0 40 40" 
-                className="w-10 h-10"
-                fill="none"
-              >
-                <path 
-                  d="M8 12C8 12 12 8 20 8C28 8 32 12 32 12" 
-                  stroke="currentColor" 
-                  strokeWidth="3" 
-                  strokeLinecap="round"
-                  className="text-primary"
-                />
-                <path 
-                  d="M14 12V32" 
-                  stroke="currentColor" 
-                  strokeWidth="3" 
-                  strokeLinecap="round"
-                  className="text-primary"
-                />
-                <path 
-                  d="M26 12V32" 
-                  stroke="currentColor" 
-                  strokeWidth="3" 
-                  strokeLinecap="round"
-                  className="text-primary"
-                />
-              </svg>
+              <Image
+                src="/assets/logo.jpeg"
+                alt="Yellowsense Technologies"
+                width={40}
+                height={40}
+                className="rounded-lg"
+              />
             </motion.div>
-            <span className="font-bold text-xl text-foreground">pi-labs</span>
+            <span className="font-bold text-lg text-foreground">
+              Yellowsense Technologies
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -136,7 +107,7 @@ export function Navbar() {
 
           <div className="hidden lg:block">
             <Link href="#contact">
-              <Button className="rounded-full px-6 bg-accent text-primary hover:bg-primary hover:text-white font-medium transition-all">
+              <Button className="rounded-full px-6 bg-gradient-to-r from-yellow-300 to-amber-400 text-gray-800 hover:from-yellow-400 hover:to-amber-500 font-medium transition-all">
                 Get in touch
               </Button>
             </Link>
@@ -191,7 +162,7 @@ export function Navbar() {
                 ))}
                 <div className="pt-4 px-4">
                   <Link href="#contact" onClick={() => setIsOpen(false)}>
-                    <Button className="w-full rounded-full bg-primary text-white hover:bg-primary/90">
+                    <Button className="w-full rounded-full bg-gradient-to-r from-yellow-300 to-amber-400 text-gray-800 hover:from-yellow-400 hover:to-amber-500">
                       Get in touch
                     </Button>
                   </Link>

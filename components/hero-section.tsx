@@ -2,50 +2,50 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Shield, Cpu, LineChart, Radio, Lock } from "lucide-react"
+import { ArrowRight, Shield, Cpu, LineChart, Database, Lock } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
 import { AnimatedBlobs } from "./animated-blobs"
 
 const products = [
   {
-    id: "pi-authentify",
-    tagline: "VERIFY TRUTH, FIGHT DEEPFAKES",
-    name: "authentify",
-    description: "AI-driven deepfake detection and media authentication for securing digital content integrity.",
+    id: "fraud-detection",
+    tagline: "DETECT FRAUD IN REAL-TIME",
+    name: "Fraud Detection",
+    description: "AI-powered transaction monitoring and behavioral analysis to prevent financial fraud before it happens.",
     icon: Shield,
-    color: "#4361ee",
+    color: "#fcd34d",
   },
   {
-    id: "pi-vox",
-    tagline: "UNDERSTAND EVERY VOICE",
-    name: "vox",
-    description: "Multilingual speech intelligence with transcription, diarization, and real-time translation.",
-    icon: Radio,
-    color: "#06b6d4",
-  },
-  {
-    id: "pi-scout",
-    tagline: "UNCOVER HIDDEN INSIGHTS",
-    name: "scout",
-    description: "Big data fusion and analytics platform for comprehensive threat intelligence.",
-    icon: LineChart,
-    color: "#10b981",
-  },
-  {
-    id: "pi-sense",
-    tagline: "DETECT ANOMALIES INSTANTLY",
-    name: "sense",
-    description: "Advanced sensing solutions for industrial fault detection and predictive maintenance.",
+    id: "fault-detection",
+    tagline: "PREDICT FAILURES BEFORE THEY OCCUR",
+    name: "Industrial Fault Detection",
+    description: "Advanced sensing solutions for real-time fault detection and predictive maintenance in industrial systems.",
     icon: Cpu,
-    color: "#f59e0b",
+    color: "#fbbf24",
   },
   {
-    id: "pi-securechain",
-    tagline: "SECURE THE RECORDS, PROTECT THE EVIDENCE",
-    name: "securechain",
-    description: "Secure tamper-proof evidence management with blockchain-based audit trails.",
+    id: "clean-rooms",
+    tagline: "SECURE DATA ENVIRONMENTS",
+    name: "Confidential Clean Rooms",
+    description: "Secure, compliant data environments for sensitive data processing with advanced privacy controls.",
+    icon: Database,
+    color: "#fcd34d",
+  },
+  {
+    id: "analytics",
+    tagline: "UNCOVER HIDDEN INSIGHTS",
+    name: "Data Analytics",
+    description: "Big data fusion and analytics platform for comprehensive threat intelligence and business insights.",
+    icon: LineChart,
+    color: "#fde047",
+  },
+  {
+    id: "cybersecurity",
+    tagline: "PROTECT YOUR DIGITAL ASSETS",
+    name: "Cybersecurity",
+    description: "Proactive threat detection and security audits to safeguard your critical infrastructure.",
     icon: Lock,
-    color: "#8b5cf6",
+    color: "#fbbf24",
   },
 ]
 
@@ -96,8 +96,7 @@ export function HeroSection() {
                         style={{ color: currentProduct.color }}
                       />
                     </div>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground">
-                      <span style={{ color: currentProduct.color }}>pi-</span>
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
                       {currentProduct.name}
                     </h1>
                   </div>
@@ -108,7 +107,7 @@ export function HeroSection() {
 
                   <Button 
                     size="lg" 
-                    className="rounded-full px-8 gap-2 bg-accent text-primary hover:bg-primary hover:text-primary-foreground transition-all"
+                    className="rounded-full px-8 gap-2 bg-gradient-to-r from-yellow-300 to-amber-400 text-gray-800 hover:from-yellow-400 hover:to-amber-500 transition-all"
                   >
                     Explore more
                     <ArrowRight className="w-4 h-4" />
@@ -127,7 +126,7 @@ export function HeroSection() {
                     }}
                     className={`h-2 rounded-full transition-all ${
                       index === currentIndex 
-                        ? "w-8 bg-primary" 
+                        ? "w-8 bg-yellow-400" 
                         : "w-2 bg-border hover:bg-muted-foreground"
                     }`}
                     aria-label={`Go to slide ${index + 1}`}
@@ -173,7 +172,7 @@ export function HeroSection() {
                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                     className="absolute top-10 right-10 w-16 h-16 bg-card rounded-xl shadow-lg flex items-center justify-center"
                   >
-                    <Shield className="w-8 h-8 text-primary" />
+                    <Shield className="w-8 h-8 text-yellow-400" />
                   </motion.div>
 
                   <motion.div
@@ -181,7 +180,7 @@ export function HeroSection() {
                     transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
                     className="absolute bottom-20 left-10 w-12 h-12 bg-card rounded-lg shadow-lg flex items-center justify-center"
                   >
-                    <Cpu className="w-6 h-6 text-cyan-500" />
+                    <Cpu className="w-6 h-6 text-amber-400" />
                   </motion.div>
 
                   <motion.div
@@ -189,7 +188,7 @@ export function HeroSection() {
                     transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                     className="absolute top-1/3 left-5 w-10 h-10 bg-card rounded-lg shadow-lg flex items-center justify-center"
                   >
-                    <Lock className="w-5 h-5 text-purple-500" />
+                    <Lock className="w-5 h-5 text-amber-400" />
                   </motion.div>
                 </motion.div>
               </AnimatePresence>

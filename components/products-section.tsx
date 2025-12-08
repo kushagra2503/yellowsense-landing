@@ -1,54 +1,54 @@
 "use client";
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Shield, Radio, LineChart, Cpu, Lock, ChevronRight } from "lucide-react"
+import { ArrowRight, Shield, Database, LineChart, Cpu, Lock, ChevronRight } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion";
 
 const products = [
   {
-    id: "pi-authentify",
-    name: "pi-authentify",
-    tagline: "AI-driven deepfake detection and media authentication",
-    description: "Our flagship solution for detecting synthetic media, deepfakes, and manipulated content. Built on cutting-edge AI models trained on millions of samples.",
+    id: "fraud-detection",
+    name: "Fraud Detection AI",
+    tagline: "Real-time transaction monitoring and prevention",
+    description: "Advanced AI-powered fraud detection system that monitors transactions in real-time, analyzes behavioral patterns, and prevents financial fraud before it impacts your business.",
     icon: Shield,
-    color: "#4361ee",
-    features: ["Deepfake Detection", "Media Verification", "Content Authentication", "Real-time Analysis"]
+    color: "#fcd34d",
+    features: ["Transaction Monitoring", "Behavioral Analysis", "Risk Scoring", "Real-time Alerts"]
   },
   {
-    id: "pi-vox",
-    name: "pi-vox",
-    tagline: "Multilingual speech intelligence",
-    description: "Advanced speech processing platform offering transcription, speaker diarization, and real-time translation across 100+ languages.",
-    icon: Radio,
-    color: "#06b6d4",
-    features: ["Speech-to-Text", "Speaker Recognition", "Language Translation", "Voice Analytics"]
-  },
-  {
-    id: "pi-scout",
-    name: "pi-scout",
-    tagline: "Big data fusion and analytics",
-    description: "Comprehensive threat intelligence platform that aggregates and analyzes data from multiple sources to uncover hidden patterns and risks.",
-    icon: LineChart,
-    color: "#10b981",
-    features: ["Data Aggregation", "Pattern Recognition", "Risk Assessment", "Predictive Analytics"]
-  },
-  {
-    id: "pi-sense",
-    name: "pi-sense",
-    tagline: "Advanced sensing solutions",
-    description: "Industrial IoT platform for real-time fault detection and predictive maintenance, reducing downtime and optimizing operations.",
+    id: "fault-detection",
+    name: "Industrial Fault Detection",
+    tagline: "Predictive maintenance and anomaly detection",
+    description: "AI-driven industrial IoT platform for real-time fault detection, predictive maintenance, and process optimization to reduce downtime and improve efficiency.",
     icon: Cpu,
-    color: "#f59e0b",
-    features: ["Fault Detection", "Predictive Maintenance", "IoT Integration", "Real-time Monitoring"]
+    color: "#fbbf24",
+    features: ["Anomaly Detection", "Predictive Maintenance", "IoT Integration", "Process Optimization"]
   },
   {
-    id: "pi-securechain",
-    name: "pi-securechain",
-    tagline: "Blockchain security",
-    description: "Tamper-proof evidence management and audit trail system built on blockchain technology for absolute data integrity.",
+    id: "clean-rooms",
+    name: "Confidential Clean Rooms",
+    tagline: "Secure data processing environments",
+    description: "Enterprise-grade secure data environments for sensitive data processing, analytics, and collaboration with built-in privacy controls and compliance features.",
+    icon: Database,
+    color: "#fcd34d",
+    features: ["Data Privacy", "Regulatory Compliance", "Secure Enclaves", "Access Controls"]
+  },
+  {
+    id: "analytics",
+    name: "Data & Analytics",
+    tagline: "Business intelligence and insights",
+    description: "Comprehensive data analytics platform that transforms raw data into actionable insights, enabling data-driven decision making across your organization.",
+    icon: LineChart,
+    color: "#fde047",
+    features: ["Business Intelligence", "Predictive Analytics", "Data Visualization", "Custom Reports"]
+  },
+  {
+    id: "cybersecurity",
+    name: "Cybersecurity Solutions",
+    tagline: "Proactive threat detection and defense",
+    description: "End-to-end cybersecurity solutions including threat intelligence, vulnerability assessment, and security audits to protect your digital infrastructure.",
     icon: Lock,
-    color: "#8b5cf6",
-    features: ["Blockchain Audit", "Evidence Management", "Tamper Detection", "Compliance Ready"]
+    color: "#fbbf24",
+    features: ["Threat Detection", "Security Audits", "Vulnerability Assessment", "Incident Response"]
   },
 ];
 
@@ -64,9 +64,9 @@ export function ProductsSection() {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-sm font-semibold text-primary uppercase tracking-wider"
+            className="text-sm font-semibold text-yellow-500 uppercase tracking-wider"
           >
-            Our Products
+            Our Solutions
           </motion.span>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -75,7 +75,7 @@ export function ProductsSection() {
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-4 mb-6"
           >
-            Deep Tech Security Suite
+            Deep Tech & Cybersecurity
           </motion.h2>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -84,7 +84,7 @@ export function ProductsSection() {
             transition={{ delay: 0.2 }}
             className="text-lg text-muted-foreground leading-relaxed"
           >
-            A comprehensive suite of AI-powered tools designed to detect fraud, authenticate media, and secure your digital infrastructure.
+            Comprehensive solutions for fraud prevention, industrial fault detection, and enterprise security.
           </motion.p>
         </div>
 
@@ -137,7 +137,7 @@ export function ProductsSection() {
                   <ChevronRight 
                     className={`w-5 h-5 transition-all ${
                       activeProduct.id === product.id 
-                        ? "text-primary translate-x-1" 
+                        ? "text-yellow-400 translate-x-1" 
                         : "text-muted-foreground/50 group-hover:translate-x-1"
                     }`}
                   />
@@ -211,7 +211,7 @@ export function ProductsSection() {
                   <div className="flex flex-wrap gap-4">
                     <Button 
                       size="lg"
-                      className="rounded-full px-8 gap-2"
+                      className="rounded-full px-8 gap-2 text-white"
                       style={{ backgroundColor: activeProduct.color }}
                     >
                       Learn More

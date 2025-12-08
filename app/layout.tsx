@@ -4,9 +4,9 @@ import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "YellowSense Technologies - Innovating the Future",
+  title: "Yellowsense Technologies - Deep Tech & Industrial Security",
   description:
-    "YellowSense Technologies delivers cutting-edge solutions that transform businesses through innovative technology.",
+    "Yellowsense Technologies delivers AI-powered solutions for fraud detection, industrial fault detection, and cybersecurity to protect and optimize your operations.",
   icons: {
     icon: [
       { url: '/assets/logo.jpeg', sizes: 'any', type: 'image/jpeg' },
