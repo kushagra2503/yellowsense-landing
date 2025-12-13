@@ -25,6 +25,7 @@ export function Navbar() {
       ]
     },
     { href: "#about", label: "About Us" },
+    { href: "#team", label: "Team" },
     { href: "#contact", label: "Contact" },
   ]
 
