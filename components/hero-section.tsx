@@ -34,8 +34,8 @@ const products = [
     description: "Secure, compliant data environments for sensitive data processing with advanced privacy controls.",
     icon: Database,
     color: "#fcd34d",
-    hasVideo: true,
-    videoSrc: "/video/mule-combined.mp4",
+    hasVideo: false,
+    // Video disabled: mule-combined.mp4 is 161MB, too large for Git. Host externally to enable.
   },
   {
     id: "analytics",
