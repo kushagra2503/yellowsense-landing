@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Linkedin } from "lucide-react"
+import Image from "next/image"
 
 const teamMembers = [
   {
@@ -9,37 +10,50 @@ const teamMembers = [
     designation: "CEO & Founder",
     description: "Visionary leader driving innovation in enterprise AI and security solutions.",
     linkedin: "https://www.linkedin.com/in/prakhar-goyal-1744021b/",
+    image: "/profile/ceo.jpeg",
   },
   {
     name: "Komal Goyal",
     designation: "COO",
     description: "Operations leader overseeing business strategy, team coordination, and delivery excellence.",
     linkedin: "https://www.linkedin.com/in/komal-goyal-51b09555/",
+    image: "/profile/coo.jpeg",
   },
   {
     name: "Animesh Sharma",
     designation: "Backend Engineer",
     description: "Backend engineer specializing in scalable APIs, database architecture, and system performance.",
     linkedin: "https://www.linkedin.com/in/animesh-sharma-144732250/",
+    image: "/profile/animesh.png",
   },
   {
     name: "Kushagra",
     designation: "Frontend Engineer",
     description: "Frontend engineer crafting intuitive user interfaces and exceptional user experiences.",
     linkedin: "https://www.linkedin.com/in/kushagra2503/",
+    image: "/profile/kush.jpeg",
   },
   {
     name: "Abhimanyu Malik",
     designation: "Backend Engineer",
     description: "Backend engineer specializing in server-side architecture, API development, and cloud infrastructure.",
     linkedin: "https://www.linkedin.com/in/abhimanyu-malik-19190622a/",
+    image: "/profile/abhi.jpeg",
   },
   {
     name: "Talha Nagima",
     designation: "Backend Engineer",
     description: "Backend engineer focused on database design, system optimization, and robust security implementations.",
     linkedin: "https://www.linkedin.com/in/talhanagina306/",
+    image: "/profile/talha.jpeg",
   },
+  {
+    name:"Binita Mahto",
+    designation: "Frontend Engineer",
+    description: "Frontend engineer crafting intuitive user interfaces and exceptional user experiences.",
+    linkedin: "https://www.linkedin.com/in/binita-mahto-19190622a/",
+    image: "/profile/binita.jpeg",
+  }
 ]
 
 export function TeamSection() {
@@ -86,7 +100,24 @@ export function TeamSection() {
               transition={{ delay: index * 0.1 }}
               className="group"
             >
-              <div className="bg-card rounded-2xl border border-border p-6 shadow-sm hover:shadow-md hover:border-amber-200 transition-all duration-300 h-full flex flex-col">
+              <div className="bg-card rounded-2xl border border-border p-6 shadow-sm hover:shadow-md hover:border-amber-200 transition-all duration-300 h-full flex flex-col items-center text-center">
+                {/* Image */}
+                {member.image ? (
+                  <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-2 border-amber-100 group-hover:border-amber-300 transition-colors">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={96}
+                      height={96}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ) : (
+                  <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-2 border-amber-100 bg-secondary flex items-center justify-center text-2xl font-bold text-muted-foreground">
+                    {member.name.charAt(0)}
+                  </div>
+                )}
+
                 {/* Name */}
                 <h3 className="text-xl font-semibold text-foreground mb-1">
                   {member.name}
