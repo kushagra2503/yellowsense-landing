@@ -17,7 +17,7 @@ const iconMap: Record<IconName, LucideIcon> = {
 
 export function HeroSection() {
   return (
-    <section className="min-h-screen pt-24 pb-12 flex flex-col items-center relative overflow-hidden">
+    <section className="pt-32 pb-20 relative overflow-hidden">
       {/* Animated Blobs Background */}
       <AnimatedBlobs position="left" />
       <AnimatedBlobs position="right" />
@@ -28,7 +28,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="text-center mb-16"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 border border-blue-200 rounded-full mb-6">
             <span className="relative flex h-2 w-2">
@@ -48,8 +48,21 @@ export function HeroSection() {
           </p>
         </motion.div>
 
+        {/* Section Title */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-center mb-10"
+        >
+          <span className="text-sm font-semibold text-amber-500 uppercase tracking-wider">Our Solutions</span>
+          <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-2">
+            Explore Our Products
+          </h2>
+        </motion.div>
+
         {/* Products Grid */}
-        <div id="products" className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div id="products" className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {products.map((product, index) => {
             const Icon = iconMap[product.iconName]
             return (
