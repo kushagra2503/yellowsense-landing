@@ -1,18 +1,19 @@
 "use client"
 
 import Link from "next/link"
-import { ArrowRight, Shield, Cpu, Database, LineChart, Lock, Users, LucideIcon } from "lucide-react"
+import { ArrowRight, Shield, Cpu, Database, Volume2, Lock, Key, LucideIcon } from "lucide-react"
 import { motion } from "framer-motion"
 import { AnimatedBlobs } from "./animated-blobs"
 import { products, IconName } from "@/lib/products"
+import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card"
 
 const iconMap: Record<IconName, LucideIcon> = {
   Shield,
   Cpu,
   Database,
-  LineChart,
+  Volume2,
   Lock,
-  Users,
+  Key,
 }
 
 export function HeroSection() {
@@ -48,21 +49,41 @@ export function HeroSection() {
           </p>
         </motion.div>
 
-        {/* Section Title */}
+        {/* Company Tagline & Description */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-center mb-10"
+          className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-2xl p-8 mb-16 max-w-4xl mx-auto shadow-sm"
         >
-          <span className="text-sm font-semibold text-amber-500 uppercase tracking-wider">Our Solutions</span>
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mt-2">
-            Explore Our Products
+          <h2 className="text-xl md:text-2xl font-bold text-foreground mb-4 text-center">
+            Where <span className="text-amber-500">Deep Tech</span> Meets Real-World Impact
           </h2>
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-center mb-8">
+            Yellowsense Technologies is a Bengaluru-based deep tech company building AI-driven solutions 
+            for industries that demand precision, security, and reliability. From detecting industrial faults 
+            before they cause downtime, to stopping financial fraud in real-time, to safeguarding enterprises 
+            from cyber threats — we combine cutting-edge machine learning with domain expertise to solve 
+            problems that matter.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <span className="px-4 py-1.5 bg-secondary/50 rounded-full text-sm font-medium text-foreground border border-border">
+              Industrial AI
+            </span>
+            <span className="px-4 py-1.5 bg-secondary/50 rounded-full text-sm font-medium text-foreground border border-border">
+              Fraud Prevention
+            </span>
+            <span className="px-4 py-1.5 bg-secondary/50 rounded-full text-sm font-medium text-foreground border border-border">
+              Cybersecurity
+            </span>
+            <span className="px-4 py-1.5 bg-secondary/50 rounded-full text-sm font-medium text-foreground border border-border">
+              Voice AI
+            </span>
+          </div>
         </motion.div>
 
-        {/* Products Grid */}
-        <div id="products" className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        {/* Products Grid with 3D Cards */}
+        <div id="products" className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
           {products.map((product, index) => {
             const Icon = iconMap[product.iconName]
             return (
@@ -73,49 +94,60 @@ export function HeroSection() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={`/products/${product.slug}`}>
-                  <div className="group relative bg-card rounded-2xl border border-border p-6 h-full hover:border-amber-300 hover:shadow-xl transition-all duration-300 cursor-pointer overflow-hidden">
-                    {/* Hover gradient overlay */}
-                    <div 
-                      className={`absolute inset-0 bg-gradient-to-br ${product.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
-                    />
-                    
-                    <div className="relative z-10">
-                      {/* Icon */}
+                  <CardContainer containerClassName="py-0" className="w-full">
+                    <CardBody className="bg-card relative group/card border border-border rounded-2xl p-6 h-auto w-full hover:shadow-2xl hover:border-amber-300 transition-shadow duration-300">
+                      {/* Hover gradient overlay */}
                       <div 
-                        className="w-14 h-14 rounded-xl flex items-center justify-center mb-5 transition-transform group-hover:scale-110"
+                        className={`absolute inset-0 bg-gradient-to-br ${product.gradient} opacity-0 group-hover/card:opacity-5 transition-opacity duration-300 rounded-2xl`}
+                      />
+                      
+                      {/* Icon */}
+                      <CardItem
+                        translateZ={50}
+                        className="w-14 h-14 rounded-xl flex items-center justify-center mb-5"
                         style={{ backgroundColor: `${product.color}20` }}
                       >
                         <Icon 
-                          className="w-7 h-7 transition-colors" 
+                          className="w-7 h-7" 
                           style={{ color: product.color }}
                         />
-                      </div>
+                      </CardItem>
 
                       {/* Tagline */}
-                      <span 
+                      <CardItem
+                        translateZ={40}
                         className="text-[10px] font-bold tracking-[0.15em] uppercase mb-2 block"
                         style={{ color: product.color }}
                       >
                         {product.tagline}
-                      </span>
+                      </CardItem>
 
                       {/* Name */}
-                      <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-amber-600 transition-colors">
+                      <CardItem
+                        translateZ={30}
+                        className="text-xl font-bold text-foreground mb-3"
+                      >
                         {product.name}
-                      </h3>
+                      </CardItem>
 
                       {/* Description */}
-                      <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                      <CardItem
+                        translateZ={20}
+                        className="text-sm text-muted-foreground leading-relaxed mb-4"
+                      >
                         {product.shortDescription}
-                      </p>
+                      </CardItem>
 
                       {/* Arrow */}
-                      <div className="flex items-center gap-2 text-sm font-medium text-amber-500 group-hover:text-amber-600 transition-colors">
+                      <CardItem
+                        translateZ={60}
+                        className="flex items-center gap-2 text-sm font-medium text-amber-500 group-hover/card:text-amber-600 transition-colors"
+                      >
                         Learn more
-                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                      </div>
-                    </div>
-                  </div>
+                        <ArrowRight className="w-4 h-4 group-hover/card:translate-x-1 transition-transform" />
+                      </CardItem>
+                    </CardBody>
+                  </CardContainer>
                 </Link>
               </motion.div>
             )

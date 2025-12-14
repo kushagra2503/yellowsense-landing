@@ -20,9 +20,9 @@ export function Navbar() {
         { label: "Fraud Detection", desc: "Real-time transaction monitoring", href: "/products/fraud-detection" },
         { label: "Industrial Fault Detection", desc: "AI-powered anomaly detection", href: "/products/fault-detection" },
         { label: "Confidential Clean Rooms", desc: "Secure data environments", href: "/products/clean-rooms" },
-        { label: "Data Analytics", desc: "Big data insights platform", href: "/products/analytics" },
+        { label: "TTS Model", desc: "Natural voice synthesis AI", href: "/products/sys-pin-tts" },
         { label: "Cybersecurity", desc: "Proactive threat detection", href: "/products/cybersecurity" },
-        { label: "Nanny Verification", desc: "Trust & safety for families", href: "/products/nanny-verification" },
+        { label: "Encryption & Security Platform", desc: "Advanced data protection", href: "/products/encryption-platform" },
       ]
     },
     { href: "/#about", label: "About Us" },

@@ -1,1 +1,11 @@
-{"version":4,"routes":{"/products/fraud-detection":{},"/products/fault-detection":{},"/products/clean-rooms":{},"/products/analytics":{},"/products/cybersecurity":{},"/products/nanny-verification":{}},"dynamicRoutes":{"/products/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/products/[slug]","routeRegex":"^\\/products\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"a422cbc07866923567fdc9e04a48a88f","previewModeSigningKey":"9c0ecb758c45ca5b37cc59bb21a75f647890bb1c1e51880beae1efa000533cb1","previewModeEncryptionKey":"73e1ab2f735556c79c206058cc2b412f8adbb9f8aa3a35b2eba568d2c414b8ae"}}
+{
+  "version": 4,
+  "routes": {},
+  "dynamicRoutes": {},
+  "notFoundRoutes": [],
+  "preview": {
+    "previewModeId": "e48f9666ee9ce58460555d0413bf0cf0",
+    "previewModeSigningKey": "74f052a1bb1d15fe9cf9f5e7797cf78b40b57cab908a851aea1d1babc94e2c66",
+    "previewModeEncryptionKey": "068f2998d6fe31a2a561a984e7d4c69e7560eef43152d84e9f1b5262ce01f997"
+  }
+}

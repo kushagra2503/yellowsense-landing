@@ -30,9 +30,9 @@ export function Footer() {
     { label: "Fraud Detection", href: "/products/fraud-detection" },
     { label: "Industrial Fault Detection", href: "/products/fault-detection" },
     { label: "Confidential Clean Rooms", href: "/products/clean-rooms" },
-    { label: "Data Analytics", href: "/products/analytics" },
+    { label: "TTS Model", href: "/products/sys-pin-tts" },
     { label: "Cybersecurity", href: "/products/cybersecurity" },
-    { label: "Nanny Verification", href: "/products/nanny-verification" },
+    { label: "Encryption & Security Platform", href: "/products/encryption-platform" },
   ]
 
   const companyLinks = [
