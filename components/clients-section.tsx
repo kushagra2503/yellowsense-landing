@@ -14,7 +14,7 @@ export function ClientsSection() {
   ]
 
   return (
-    <section className="pt-0 pb-16 mt-[-6rem] overflow-hidden">
+    <section className="pt-8 pb-16 overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
