@@ -19,7 +19,7 @@ const iconMap: Record<IconName, LucideIcon> = {
 
 export function HeroSection() {
   return (
-    <section className="pt-[28rem] lg:pt-[32rem] pb-0 mb-[-6rem] relative overflow-hidden">
+    <section className="pt-32 lg:pt-40 pb-0 mb-[-6rem] relative overflow-hidden">
       {/* Animated Blobs Background */}
       <AnimatedBlobs position="left" />
       <AnimatedBlobs position="right" />
