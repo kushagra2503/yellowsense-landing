@@ -137,7 +137,8 @@ export const products = [
     iconName: "Key" as const,
     color: "#8b5cf6", // Violet-500
     gradient: "from-violet-500 to-purple-600",
-    hasVideo: false,
+    hasVideo: true,
+    videoSrc: "/video/he-web.mp4",
     features: [
       "Advanced cryptographic algorithms",
       "Secure key management",
