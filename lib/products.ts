@@ -103,31 +103,6 @@ export const products = [
     ],
   },
   {
-    id: "cybersecurity",
-    slug: "cybersecurity",
-    tagline: "PROTECT YOUR DIGITAL ASSETS",
-    name: "Cybersecurity",
-    shortDescription: "Proactive threat detection and security audits to safeguard your critical infrastructure.",
-    description: "Our Cybersecurity solutions provide comprehensive protection against digital threats. From vulnerability assessments to continuous monitoring, we help organizations identify and mitigate risks before they become breaches.",
-    iconName: "Lock" as const,
-    color: "#ef4444", // Red-500
-    gradient: "from-red-500 to-rose-600",
-    hasVideo: false,
-    features: [
-      "Vulnerability assessment",
-      "Penetration testing",
-      "24/7 threat monitoring",
-      "Incident response",
-      "Security awareness training",
-      "Compliance auditing",
-    ],
-    benefits: [
-      { title: "24/7 Protection", description: "Round-the-clock security monitoring" },
-      { title: "Proactive Defense", description: "Stop threats before they strike" },
-      { title: "Risk Mitigation", description: "Identify and fix vulnerabilities" },
-    ],
-  },
-  {
     id: "encryption-platform",
     slug: "encryption-platform",
     tagline: "ADVANCED DATA PROTECTION",
