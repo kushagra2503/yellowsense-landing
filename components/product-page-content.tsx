@@ -244,7 +244,7 @@ export function ProductPageContent({ product }: ProductPageContentProps) {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="rounded-full px-8 border-white/50 text-white hover:bg-white/10"
+                  className="rounded-full px-8 bg-transparent border-white/50 text-white hover:bg-white/10"
                 >
                   Contact Us
                 </Button>
