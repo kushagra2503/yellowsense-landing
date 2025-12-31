@@ -24,7 +24,7 @@ export function Navbar() {
         { label: "Encryption & Security Platform", desc: "Advanced data protection", href: "/products/encryption-platform" },
         { label: "Document Processing", desc: "Intelligent document automation", href: "/products/document-processing" },
         { label: "eTappal Automation", desc: "Smart government workflows", href: "/products/etappal-automation" },
-        { label: "Compliance Monitoring", desc: "Automated regulatory compliance", href: "/products/compliance-monitoring" },
+        { label: "Compliance Monitoring System", desc: "Automated regulatory compliance", href: "/products/compliance-monitoring" },
       ]
     },
     { href: "/#about", label: "About Us" },
