@@ -182,6 +182,33 @@ export const products = [
       { title: "100% Traceable", description: "Complete digital audit trails" },
     ],
   },
+  {
+    id: "compliance-monitoring",
+    slug: "compliance-monitoring",
+    tagline: "AUTOMATED COMPLIANCE MONITORING",
+    name: "Compliance Monitoring System",
+    shortDescription: "AI-driven system for real-time compliance monitoring and risk management across regulatory frameworks.",
+    description: "Ensure continuous adherence to regulatory standards with our Compliance Monitoring System. By leveraging AI to analyze operational data against regulatory requirements, we automate the detection of non-compliance events, streamline audit processes, and provide real-time visibility into your organization's compliance posture.",
+    iconName: "ShieldCheck" as const,
+    color: "#84cc16", // Lime-500
+    gradient: "from-lime-500 to-green-600",
+    hasVideo: true,
+    videoSrc: "/video/industrial-video-1767150913419.mp4",
+    demoUrl: "https://huggingface.co/spaces/Talha064/yellowsense-compliance-demo",
+    features: [
+      "Real-time regulatory tracking",
+      "Automated policy enforcement",
+      "Risk assessment and scoring",
+      "Digital audit trails",
+      "Incident reporting and management",
+      "Customizable compliance dashboards",
+    ],
+    benefits: [
+      { title: "100% Audit Ready", description: "Always prepared for regulatory audits" },
+      { title: "Reduce Risk", description: "Proactively mitigate compliance risks" },
+      { title: "Streamlined Operations", description: "Automate manual compliance checks" },
+    ],
+  },
 ]
 
 export type Product = typeof products[number]
