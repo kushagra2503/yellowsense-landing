@@ -210,8 +210,8 @@ export const products = [
     ],
   },
   {
-    id: "fingerprint-liveness",
-    slug: "fingerprint-liveness",
+    id: "fingerprint-authentication",
+    slug: "fingerprint-authentication",
     tagline: "BIOMETRIC SECURITY",
     name: "Contactless Fingerprint Authentication",
     shortDescription: "AI-powered SDK for secure, contactless fingerprint authentication using standard smartphone cameras.",

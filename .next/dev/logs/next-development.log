@@ -90,3 +90,4 @@ Check the render method of `HeroSection`.
 [37:33:29.680] Server  LOG      ✓ Compiled in 31ms
 [37:37:01.530] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/products/fingerprint-liveness color: rgb(120, 120, 120) color: inherit {"dp":"/products/[slug]","o":"http://localhost:3000/products/fingerprint-liveness","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767284675827}
 [37:40:07.354] Server  LOG      ✓ Compiled in 70ms
+[38:27:57.068] Server  LOG      ✓ Compiled in 34ms
