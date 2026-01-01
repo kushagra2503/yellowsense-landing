@@ -194,7 +194,7 @@ export const products = [
     gradient: "from-lime-500 to-green-600",
     hasVideo: true,
     videoSrc: "/video/industrial-video-1767150913419.mp4",
-    demoUrl: "https://huggingface.co/spaces/Talha064/yellowsense-compliance-demo",
+    demoUrl: "https://huggingface.co/spaces/talha-yellowsense/yellowsense-compliance-demo",
     features: [
       "Real-time regulatory tracking",
       "Automated policy enforcement",

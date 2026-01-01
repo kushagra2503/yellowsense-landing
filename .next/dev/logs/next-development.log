@@ -68,3 +68,4 @@ Check the render method of `HeroSection`.
 [00:34:49.880] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#products color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#products","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767151344598}
 [00:34:52.516] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
 [00:34:52.516] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/products/compliance-monitoring color: rgb(120, 120, 120) color: inherit {"dp":"/products/[slug]","o":"http://localhost:3000/products/compliance-monitoring","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767151347233}
+[34:11:56.932] Server  LOG      ✓ Compiled in 110ms
