@@ -82,3 +82,11 @@ Check the render method of `HeroSection`.
 [34:18:08.821] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/products/fingerprint-liveness color: rgb(120, 120, 120) color: inherit {"dp":"/products/[slug]","o":"http://localhost:3000/products/fingerprint-liveness","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767272743194}
 [34:18:14.676] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#products color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#products","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767272749044}
 [34:18:19.538] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/products/fingerprint-liveness color: rgb(120, 120, 120) color: inherit {"dp":"/products/[slug]","o":"http://localhost:3000/products/fingerprint-liveness","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767272753912}
+[34:19:21.691] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#products color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#products","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767272816058}
+[36:49:18.633] Server  LOG      ✓ Compiled in 91ms
+[37:32:44.163] Server  LOG      ✓ Compiled in 125ms
+[37:32:56.282] Server  LOG      ✓ Compiled in 68ms
+[37:33:04.209] Server  LOG      ✓ Compiled in 35ms
+[37:33:29.680] Server  LOG      ✓ Compiled in 31ms
+[37:37:01.530] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/products/fingerprint-liveness color: rgb(120, 120, 120) color: inherit {"dp":"/products/[slug]","o":"http://localhost:3000/products/fingerprint-liveness","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767284675827}
+[37:40:07.354] Server  LOG      ✓ Compiled in 70ms

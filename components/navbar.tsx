@@ -25,7 +25,7 @@ export function Navbar() {
         { label: "Document Processing", desc: "Intelligent document automation", href: "/products/document-processing" },
         { label: "eTappal Automation", desc: "Smart government workflows", href: "/products/etappal-automation" },
         { label: "Compliance Monitoring System", desc: "Automated regulatory compliance", href: "/products/compliance-monitoring" },
-        { label: "Fingerprint Liveness", desc: "Biometric security", href: "/products/fingerprint-liveness" },
+        { label: "Contactless Fingerprint", desc: "Biometric security", href: "/products/fingerprint-liveness" },
       ]
     },
     { href: "/#about", label: "About Us" },

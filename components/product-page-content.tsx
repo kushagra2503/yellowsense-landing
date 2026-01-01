@@ -92,6 +92,17 @@ export function ProductPageContent({ product }: ProductPageContentProps) {
                     <ArrowRight className="w-4 h-4" />
                   </Button>
                 )}
+                {product.detailsUrl && (
+                  <Link href={product.detailsUrl} target="_blank" rel="noopener noreferrer">
+                    <Button 
+                      size="lg" 
+                      variant="outline"
+                      className="rounded-full px-8"
+                    >
+                      See Details
+                    </Button>
+                  </Link>
+                )}
               </div>
             </motion.div>
 
@@ -241,6 +252,17 @@ export function ProductPageContent({ product }: ProductPageContentProps) {
                   Schedule Demo
                   <ArrowRight className="w-4 h-4" />
                 </Button>
+              )}
+              {product.detailsUrl && (
+                <Link href={product.detailsUrl} target="_blank" rel="noopener noreferrer">
+                  <Button 
+                    size="lg"
+                    className="rounded-full px-8 gap-2 bg-white/10 border border-white/20 text-white hover:bg-white/20 backdrop-blur-sm"
+                  >
+                    See Details
+                    <ArrowRight className="w-4 h-4" />
+                  </Button>
+                </Link>
               )}
               <Link href="/#contact">
                 <Button 
