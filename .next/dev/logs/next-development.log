@@ -69,3 +69,16 @@ Check the render method of `HeroSection`.
 [00:34:52.516] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
 [00:34:52.516] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/products/compliance-monitoring color: rgb(120, 120, 120) color: inherit {"dp":"/products/[slug]","o":"http://localhost:3000/products/compliance-monitoring","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767151347233}
 [34:11:56.932] Server  LOG      ✓ Compiled in 110ms
+[34:17:30.223] Server  LOG      ✓ Compiled in 96ms
+[34:17:37.050] Server  LOG      ✓ Compiled in 173ms
+[34:17:43.218] Server  LOG      ✓ Compiled in 55ms
+[34:17:48.176] Server  LOG      ✓ Compiled in 30ms
+[34:18:06.052] Browser WARN    Image with src "http://localhost:3000/assets/logo.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[34:18:06.052] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[34:18:06.052] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[34:18:06.052] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[34:18:06.052] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767272740425}
+[34:18:08.821] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[34:18:08.821] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/products/fingerprint-liveness color: rgb(120, 120, 120) color: inherit {"dp":"/products/[slug]","o":"http://localhost:3000/products/fingerprint-liveness","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767272743194}
+[34:18:14.676] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#products color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#products","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767272749044}
+[34:18:19.538] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/products/fingerprint-liveness color: rgb(120, 120, 120) color: inherit {"dp":"/products/[slug]","o":"http://localhost:3000/products/fingerprint-liveness","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767272753912}
