@@ -302,8 +302,8 @@ export const products = [
         color: "#f43f5e", // Rose-500
         gradient: "from-rose-500 to-pink-600",
         hasVideo: false,
-        demoUrl: "https://drive.google.com/drive/folders/1AnQ6MBINPXvIItdEKirvk2uBB_WoG3OA",
-        detailsUrl: "https://drive.google.com/drive/folders/1AnQ6MBINPXvIItdEKirvk2uBB_WoG3OA",
+        demoUrl: "https://drive.google.com/file/d/1FdPSw_rOBJ9DYfkQ_MIpQCNS7B2ewHoS/view?usp=sharing",
+        detailsUrl: "https://drive.google.com/file/d/1oeCacrUdXm1XaAIJuKmeLec_FuAXjIKR/view?usp=share_link",
         features: [
           "Real-time sensor monitoring",
           "AI-driven pattern recognition",
