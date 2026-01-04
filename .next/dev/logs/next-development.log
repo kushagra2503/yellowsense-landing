@@ -91,3 +91,22 @@ Check the render method of `HeroSection`.
 [37:37:01.530] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/products/fingerprint-liveness color: rgb(120, 120, 120) color: inherit {"dp":"/products/[slug]","o":"http://localhost:3000/products/fingerprint-liveness","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767284675827}
 [37:40:07.354] Server  LOG      ✓ Compiled in 70ms
 [38:27:57.068] Server  LOG      ✓ Compiled in 34ms
+[38:30:06.288] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[38:30:06.288] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/products/fingerprint-liveness","route":"/products/[slug]"}
+[38:30:06.288] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/products/fingerprint-liveness color: rgb(120, 120, 120) color: inherit {"dp":"/products/[slug]","o":"http://localhost:3000/products/fingerprint-liveness","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767287860628}
+[38:30:08.235] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/#products color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/#products","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767287862537}
+[38:30:08.235] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[38:30:08.235] Browser WARN    Image with src "http://localhost:3000/assets/logo.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[38:30:10.857] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[38:30:10.857] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/products/fingerprint-authentication color: rgb(120, 120, 120) color: inherit {"dp":"/products/[slug]","o":"http://localhost:3000/products/fingerprint-authentication","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767287865196}
+[106:43:25.181] Server  LOG      ✓ Compiled in 164ms
+[106:43:56.168] Server  LOG      ✓ Compiled in 34ms
+[106:44:30.223] Server  LOG      ✓ Compiled in 34ms
+[106:45:20.100] Server  LOG      ✓ Compiled in 32ms
+[106:45:37.900] Browser WARN    Image with src "http://localhost:3000/assets/logo.jpeg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[106:45:37.900] Browser WARN    Please ensure that the container has a non-static position, like 'relative', 'fixed', or 'absolute' to ensure scroll offset is calculated correctly.
+[106:45:37.900] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[106:45:37.900] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[106:45:37.900] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767533591494}
+[106:45:41.056] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[106:45:41.056] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/products/naval-innovation color: rgb(120, 120, 120) color: inherit {"dp":"/products/[slug]","o":"http://localhost:3000/products/naval-innovation","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1767533594649}

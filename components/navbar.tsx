@@ -26,6 +26,7 @@ export function Navbar() {
         { label: "eTappal Automation", desc: "Smart government workflows", href: "/products/etappal-automation" },
         { label: "Compliance Monitoring System", desc: "Automated regulatory compliance", href: "/products/compliance-monitoring" },
         { label: "Contactless Fingerprint", desc: "Biometric security", href: "/products/fingerprint-authentication" },
+        { label: "Naval Innovation", desc: "Maritime intelligence", href: "/products/naval-innovation" },
       ]
     },
     { href: "/#about", label: "About Us" },

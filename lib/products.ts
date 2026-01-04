@@ -237,6 +237,33 @@ export const products = [
       { title: "Seamless", description: "Fast verification without user friction" },
     ],
   },
+  {
+    id: "naval-innovation",
+    slug: "naval-innovation",
+    tagline: "MARITIME INTELLIGENCE",
+    name: "Naval Innovation Solutions",
+    shortDescription: "Cutting-edge AI and sensor fusion technologies for naval defense and maritime operational efficiency.",
+    description: "Empower naval operations with our Naval Innovation Solutions. We integrate advanced AI, sensor fusion, and real-time data analytics to enhance situational awareness, optimize fleet maintenance, and strengthen maritime defense. Our solutions are designed to operate in challenging maritime environments, providing reliable intelligence and decision support for mission-critical tasks.",
+    iconName: "Anchor" as const,
+    color: "#0ea5e9", // Sky-500
+    gradient: "from-sky-500 to-blue-600",
+    hasVideo: false,
+    demoUrl: "https://drive.google.com/file/d/1nuh6jAt_ivhDHzVLHIG4YGUuen5nuMxU/view?usp=drivesdk",
+    detailsUrl: "https://drive.google.com/file/d/1QNs3R7SOHjriJXt-BIl5sMUsnGIfmOai/view?usp=drive_link",
+    features: [
+      "Maritime sensor fusion",
+      "Predictive fleet maintenance",
+      "Real-time situational awareness",
+      "AI-driven anomaly detection",
+      "Secure data transmission",
+      "Operational efficiency optimization",
+    ],
+    benefits: [
+      { title: "Mission Ready", description: "Enhance operational readiness" },
+      { title: "Smart Defense", description: "Data-driven maritime security" },
+      { title: "Optimized Fleet", description: "Reduce downtime and maintenance costs" },
+    ],
+  },
 ]
 
 export type Product = typeof products[number]
