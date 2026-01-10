@@ -25,8 +25,10 @@ export function Navbar() {
         { label: "Document Processing", desc: "Intelligent document automation", href: "/products/document-processing" },
         { label: "eTappal Automation", desc: "Smart government workflows", href: "/products/etappal-automation" },
         { label: "Compliance Monitoring System", desc: "Automated regulatory compliance", href: "/products/compliance-monitoring" },
-        { label: "Contactless Fingerprint", desc: "Biometric security", href: "/products/fingerprint-authentication" },
+        { label: "Contactless Fingerprint Authentication", desc: "Biometric security", href: "/products/fingerprint-authentication" },
         { label: "Naval Innovation", desc: "Maritime intelligence", href: "/products/naval-innovation" },
+        { label: "Nutrition AI",desc: "AI-powered nutrition intelligence",href: "/products/nutrition-ai"},
+        { label: "TASCO Automotive", desc: "Automotive & infrastructure intelligence", href: "/products/tasco-automotive" },
       ]
     },
     { href: "/#about", label: "About Us" },

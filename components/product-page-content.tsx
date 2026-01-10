@@ -20,7 +20,20 @@ const iconMap: Record<IconName, LucideIcon> = {
   Radar,
   Lock,
 }
-
+const subIconMap: Record<IconName, LucideIcon> = {
+  Shield,
+  Cpu,
+  Database,
+  Volume2,
+  Key,
+  FileText,
+  FileStack,
+  ShieldCheck,
+  Fingerprint,
+  Anchor,
+  Radar,
+  Lock,
+}
 interface ProductPageContentProps {
   product: Product
 }

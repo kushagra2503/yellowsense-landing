@@ -1,4 +1,114 @@
-export const products = [
+export const products =  [
+  {
+    id: "tasco-automotive",
+    slug: "tasco-automotive",
+    tagline: "AUTOMOTIVE & INFRASTRUCTURE INTELLIGENCE",
+    name: "TASCO Automotive AI Solutions",
+    shortDescription:
+      "An integrated suite of AI-driven solutions addressing critical infrastructure challenges.",
+    description:
+      "TASCO Automotive AI Solutions unify three mission-critical AI systems into a single intelligent platform.",
+    iconName: "Cpu" as const,
+    color: "#0ea5e9",
+    gradient: "from-sky-500 to-blue-600",
+    hasVideo: false,
+
+    features: [
+      "Enterprise-grade AI analytics",
+      "Real-time monitoring & alerts",
+      "Scalable infrastructure deployment",
+      "Cross-domain intelligence platform",
+      "Secure and compliant architecture",
+    ],
+
+    benefits: [
+      {
+        title: "Operational Excellence",
+        description: "Improve efficiency and reduce losses across infrastructure systems.",
+      },
+      {
+        title: "AI-Driven Decisions",
+        description: "Enable data-backed decision-making with real-time insights.",
+      },
+      {
+        title: "Regulatory Confidence",
+        description: "Ensure compliance with audit-ready systems.",
+      },
+    ],
+
+    additionalProducts: [
+      {
+        id: "tasco-nrw-leakage",
+        slug: "tasco-nrw-leakage",
+        tagline: "SMART WATER INTELLIGENCE",
+        name: "AI-Driven NRW Leakage Detection",
+        shortDescription:
+          "Smart leakage analysis using pressure and flow data for NRW reduction.",
+        description:
+          "AI-powered leakage analysis system that continuously monitors pressure and flow data.",
+          iconName: "Database",
+        features: [
+          "Pressure & flow data analytics",
+          "Real-time NRW alerting",
+          "Leakage localization & severity scoring",
+          "Historical trend analysis",
+          "Scalable across large water networks",
+        ],
+        benefits: [
+          { title: "Reduced Water Loss", description: "Detect and address leaks early." },
+          { title: "Faster Response", description: "Real-time alerts enable quick action." },
+          { title: "Sustainable Operations", description: "Improve water efficiency at scale." },
+        ],
+      },
+
+      {
+        id: "tasco-energy-orchestration",
+        slug: "tasco-energy-orchestration",
+        tagline: "SMART ENERGY MANAGEMENT",
+        name: "Intelligent Energy Orchestration Platform",
+        shortDescription: "AI-based orchestration of PV, Grid, and ESS systems.",
+        description:
+          "An AI-driven energy orchestration platform that balances PV, grid, and storage.",
+          iconName: "Volume2",
+        features: [
+          "PV–Grid–ESS optimization",
+          "Demand forecasting & load balancing",
+          "Energy cost optimization",
+          "Real-time energy flow monitoring",
+          "AI-driven dispatch decisions",
+        ],
+        benefits: [
+          { title: "Lower Energy Costs", description: "Optimize energy usage dynamically." },
+          { title: "Max Renewable Usage", description: "Increase clean energy utilization." },
+          { title: "Grid Stability", description: "Ensure reliable power operations." },
+        ],
+      },
+
+      {
+        id: "tasco-ai-compliance",
+        slug: "tasco-ai-compliance",
+        tagline: "AI GOVERNANCE & COMPLIANCE",
+        name: "AI-Powered Compliance & Document Governance System",
+        shortDescription:
+          "Automated AI system for compliance monitoring and document governance.",
+        description:
+          "Comprehensive AI-driven compliance platform for governance and audits.",
+          iconName: "ShieldCheck",
+        features: [
+          "Automated document classification",
+          "Policy & compliance rule enforcement",
+          "Audit-ready governance workflows",
+          "Regulatory monitoring & alerts",
+          "Secure document lifecycle management",
+        ],
+        benefits: [
+          { title: "Audit Ready", description: "Always prepared for audits." },
+          { title: "Reduced Manual Effort", description: "Automate compliance workflows." },
+          { title: "Enterprise Trust", description: "Ensure transparency and governance." },
+        ],
+      },
+    ],
+  },
   {
     id: "fraud-detection",
     slug: "fraud-detection",
@@ -153,6 +263,43 @@ export const products = [
       { title: "90% Faster", description: "Accelerate document processing times" },
       { title: "99% Accuracy", description: "High-precision data extraction" },
       { title: "Scalable", description: "Process millions of documents effortlessly" },
+    ],
+  },
+  {
+    id: "nutrition-ai",
+    slug: "nutrition-ai",
+    tagline: "AI-POWERED NUTRITION INTELLIGENCE",
+    name: "Nutrition AI Platform",
+    shortDescription:
+      "AI-driven nutrition analysis for personalized and population-scale health insights.",
+    description:
+      "Nutrition AI leverages advanced machine learning to analyze dietary patterns, nutritional intake, and health indicators to deliver personalized nutrition recommendations at scale.",
+    iconName: "Database" as const,
+    color: "#22c55e",
+    gradient: "from-green-400 to-emerald-600",
+    hasVideo: false,
+  
+    features: [
+      "Personalized nutrition recommendations",
+      "Dietary pattern analysis",
+      "Macro & micronutrient tracking",
+      "Health goal optimization",
+      "Population-level insights",
+    ],
+  
+    benefits: [
+      {
+        title: "Personalized Health",
+        description: "AI-driven diet plans tailored to individual needs.",
+      },
+      {
+        title: "Data-Backed Decisions",
+        description: "Nutrition insights powered by real-world data.",
+      },
+      {
+        title: "Scalable Intelligence",
+        description: "Deployable for enterprises, hospitals, and programs.",
+      },
     ],
   },
   {
@@ -323,8 +470,19 @@ export const products = [
 ]
 
 export type Product = typeof products[number]
-export type IconName = Product["iconName"]
-
+export type IconName =
+  | "Shield"
+  | "Cpu"
+  | "Database"
+  | "Volume2"
+  | "Key"
+  | "FileText"
+  | "FileStack"
+  | "ShieldCheck"
+  | "Fingerprint"
+  | "Anchor"
+  | "Radar"
+  | "Lock"
 export function getProductBySlug(slug: string): Product | undefined {
   return products.find((p) => p.slug === slug)
 }
