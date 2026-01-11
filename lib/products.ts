@@ -384,7 +384,7 @@ export const products = [
         color: "#0ea5e9", // Sky-500
         gradient: "from-sky-500 to-blue-600",
         hasVideo: false,
-        detailsUrl: "/Project Brief Doc.pdf",
+        detailsUrl: "https://drive.google.com/file/d/1VDPPpSNoY7aaJ_d13qfBQJ9TDx6aCyhj/view?usp=share_link",
         features: [
           "Real-time usage monitoring",
           "Leak detection alerts",
